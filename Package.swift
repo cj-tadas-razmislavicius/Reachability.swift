@@ -15,10 +15,7 @@ let package = Package(
             name: "Reachability",
             dependencies: [],
             path: "Sources",
-            resources: [.copy("PrivacyInfo.xcprivacy")],
-            swiftSettings: [
-                .unsafeFlags(["-enable-library-evolution"])
-            ]
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(
             name: "ReachabilityTests",
